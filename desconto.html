@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESCONTO NA RENDA</title>
+
+    <link rel="stylesheet" href="css/desconto.css">
+
+    <script src="js/desconto.js" defer></script>
+</head>
+<body>
+
+    <div id="geral">
+        <h1>DESCONTO</h1>
+
+        <P>SÃO ISENTO AS PESSOAS MENORES DE IDADE E COM RENDA ATÉ R$ 1700,00</P>
+        <P>DE 1701,00 ATÉ R$ 5000,00 -> 5%</P>
+        <P>DE R$ 5001,00 ATÉ R$ 8000,00 -> 8%</P>
+        <P>DE R$ 8001,00 ATÉ R$ 10000,00 -> 10%</P>
+        <P>DE R$ 10001,00 EM DIANTE -> 3%</P>
+
+
+        <div id="div-form">
+        <form>
+
+            <label for="nome">NOME</label> 
+            <input type="text" name="nome" id="nome"> <BR> <BR>
+
+            <label for="idade">IDADE</label>
+            <input type="text" name="idade" id="idade"> <BR> <BR> 
+
+            <label for="renda">RENDA</label>
+            <input type="text" name="renda" id="renda"> <BR> <BR>
+
+            <button type="submit">ADICIONAR</button>
+            <button type="reset">LIMPAR</button>
+        </form>
+        </div>
+    
+
+     <div id="div-lista-pessoas">
+
+    </div>
+    
+</body>
+</html>
