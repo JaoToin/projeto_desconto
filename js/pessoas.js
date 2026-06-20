@@ -1,3 +1,9 @@
+// importando o arquivo calculo.js
+
+import { calculoDesconto } from './calculos.js'
+
+
+
 // 1.CRIAR UM ARRAY DE OBJETO PESSOA 
 
 const pessoas = []
@@ -44,15 +50,15 @@ const addPessoa = (objPessoa)=>{
     listPessoa()
 }
 
-//função listar pessoas 
+//11. função listar pessoas 
 const listPessoa = () => {
 
-    //limpando a div 
+    //12.limpando a div 
     divPessoa.innerHTML = ''
 
-    //percorrendo o array com a estrutura de repetição foreach
+    //13.percorrendo o array com a estrutura de repetição foreach
 
     pessoas.forEach((elem, i)=>{
-        divPessoa.innerHTML += `<div class='item-pessoa'> ${i + 1} - ${elem.nome}  ${elem.idade}  R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')} </div> <br>`
+        divPessoa.innerHTML += `<div class='item-pessoa'> ${i + 1} - ${elem.nome} - ${elem.idade} anos. -  R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')} -  ${calculoDesconto(elem)} </div> <br>`
     })
 }

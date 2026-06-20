@@ -22,7 +22,7 @@ const calculoDesconto = (objPessoa) => {
         resposta = 'Isento de Desconto'
 
     }else if(objPessoa.renda <= 5000){
-        resposta = objPessoa.renda * 0.05
+        resposta =  objPessoa.renda * 0.05
 
     }else if(objPessoa.renda <= 8000){
         resposta = objPessoa.renda * 0.08
